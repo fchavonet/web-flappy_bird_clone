@@ -84,6 +84,61 @@ a {
     left: 1rem;
 }
 
+/* CANVAS CONTAINER */
+#canvas-container {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    cursor: none;
+}
+
+#background-canvas,
+#game-canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+#background-canvas {
+    z-index: 0;
+}
+
+#game-canvas {
+    z-index: 1;
+}
+
+#ui-canvas {
+    z-index: 2;
+}
+
+/* TOGGLE SOUND BUTTON */
+#sound-toggle-btn {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border: none;
+    color: var(--light-color);
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 999;
+}
+
 /* RESPONSIVE WARNING */
 #responsive-warning {
     width: 100%;
